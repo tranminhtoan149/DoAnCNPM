@@ -1,0 +1,65 @@
+*{
+    box-sizing: border-box;
+}
+.Acount-detail {
+    background: #596eac;
+}
+
+div.container.rounded {
+    background-color: #fff;
+    width: 70%;
+    margin: 0 auto;
+    border-bottom: 1px solid #eee;
+    border-top: 1px solid #eee;
+    
+}
+
+img.rounded-circle.mt-5 {
+    width:180px;
+    height: auto;
+}
+.form-control:focus {
+    box-shadow: none;
+    border-color: #BA68C8
+}
+
+.profile-button {
+    background: rgb(99, 39, 120);
+    box-shadow: none;
+    border: none
+}
+
+.profile-button:hover {
+    background: #682773
+}
+
+.profile-button:focus {
+    background: #682773;
+    box-shadow: none
+}
+
+.profile-button:active {
+    background: #682773;
+    box-shadow: none
+}
+
+.back:hover {
+    color: #682773;
+    cursor: pointer
+}
+
+.labels {
+    font-size: 11px
+}
+
+.add-experience:hover {
+    background: #BA68C8;
+    color: #fff;
+    cursor: pointer;
+    border: solid 1px #BA68C8
+}
+
+button.btn.profile-button {
+    background-color: #434E6E;
+    color: #ffffff;
+}

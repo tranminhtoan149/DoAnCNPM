@@ -1,0 +1,35 @@
+ #item-detail {
+     margin-left: auto;
+     margin-right: auto;
+     padding: 24px 0;
+ }
+ 
+#item-detail div.col-5 {
+    padding-top: 32px;
+}
+
+#item-detail .choose-number button {
+    margin: auto calc(100% / 100);
+    width:36px;
+    height:36px;
+    color:white;
+    background-color:#434E6E;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 700;
+}
+@media(max-width:820px ){
+    #item-detail .choose-number button{
+        margin: 0;
+    }
+}
+@media(max-width:768px ){
+    #item-detail .choose-number button{
+        margin: auto calc(100% / 100);
+    }
+}
+
+#item-detail .check-out {
+    margin:24px auto;    
+}

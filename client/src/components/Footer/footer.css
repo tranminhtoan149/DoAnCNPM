@@ -1,0 +1,91 @@
+#footer {
+    box-sizing: border-box;
+    background-color:white ;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+#footer .head-footer{
+    border-bottom: 2px solid #eee;
+}
+
+#footer .head-footer .sulogan {
+    text-align: justify;
+    padding-left: 12px;
+    padding-right: 24px;
+}
+
+#footer .footer {
+    margin: 0 auto;
+}
+#footer h4 {
+    color:rgb(69, 69, 121);
+} 
+
+
+#footer .bottom-footer{
+    text-align: center;
+    margin-top: 24px;
+    margin-bottom: 30px;
+}
+#footer ul li,#footer ul {
+    list-style: none;
+    padding: 0;
+}
+#footer ul li a {
+    color:rgb(15, 14, 14);
+    text-decoration: none;
+
+
+}
+ #footer input {
+     border: 1px solid #6550c7;
+     border-top-right-radius: 0;
+     border-bottom-right-radius: 0;
+ }
+#footer .footer-more-info div.col-8 {
+    padding-right: 0;
+}
+#footer .footer-more-info div.col-4 {
+    padding-left: 0;
+}
+#footer button {
+    
+    height: 100%;
+    border:none;
+    background-color:#6550c7;
+    color: white;
+    border-bottom-right-radius: 3px;
+    border-top-right-radius: 3px;
+    padding: 0 12px;
+}
+#footer .footer-contact i {
+    width: 30px;
+}
+#footer .footer-contact p {
+    display: inline-block;
+    width:65px
+
+}
+#footer .footer-about {
+    padding-left: 12px;;
+}
+#footer .footer-icon {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size:32px;
+}
+#footer .footer-icon i {
+    margin: 0 12px;
+    cursor: pointer;
+}
+
+#footer .footer-icon i:hover {
+    transform:scale(1.1);
+    
+}
+    
+
+
+
+

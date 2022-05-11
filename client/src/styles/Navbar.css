@@ -1,0 +1,40 @@
+#navbar {
+    height: 70px;
+    width: 100vw;
+    /* padding-left: 20px; */
+    padding-right: 20px;
+    background-color: white;
+}
+
+#navbar a {
+    text-decoration: none;
+    color: #141517;
+}
+
+#navbar a:hover {
+    color: red;
+}
+
+.logo {
+    padding: 4px;
+}
+
+.main-routes {
+    display: flex;
+    align-items: center;
+}
+
+.main-routes a {
+    color: #141517;   
+}
+
+
+.auth-routes {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.auth-routes a {
+    padding: 15px;
+}

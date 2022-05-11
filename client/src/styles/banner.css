@@ -1,0 +1,102 @@
+.banner {
+  margin-top:-20px;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.solugan, .description {
+ position: absolute;  
+  color: #FFF;
+  text-align: center;
+  font-family: "lato", sans-serif;
+  font-weight: 300;
+  font-size: 50px;
+  padding-left: 60px;
+
+}
+
+.banner span.solugan {
+  display: inline-block;
+  background: -webkit-linear-gradient(#434E6E , #bec8d3);
+  background-clip:text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.banner span.description { 
+  margin-top: 12px;
+  color: #111111;
+}
+.banner .title { 
+  left:20px;
+  top:30%;
+  min-width: 600px; ;
+  display: flex;
+  flex-direction: column;
+}
+
+.banner .description p{
+  font-size:30px;
+  /* margin-top: 60px; */
+}
+.solugan {
+  /* margin-top: -40px; */
+  letter-spacing: 6px;
+}
+
+.banner {
+  position: relative;
+
+}
+.solugan, .description {
+  transform: scale(1)
+}
+
+.banner .description button {
+  margin: 0 auto;
+
+	cursor: pointer;
+	display: block;
+	position: relative;
+	border: 2px solid #434E6E;
+	transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
+}
+.banner .description button a{
+  text-decoration: none;
+  color: #000;
+}
+.banner .description button:hover {
+  color: #fff !important;
+	background-color: transparent;
+	text-shadow: nthree;
+}
+.banner .description button:hover a{
+  color: #fff !important;
+}
+.banner .description button:hover:before { 
+  left: 0%;
+	right: auto;
+	width: 100%;
+}
+.banner .description button:before { 
+  display: block;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	height: 100%;
+	width: 0px;
+	z-index: -1;
+	content: '';
+	color: #000 !important;
+	background: #434E6E;
+	transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
+}
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-2000px);
+  }
+}

@@ -1,0 +1,109 @@
+<!-- #364b87 -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="../bootstrap/bootstrap.min.css" />
+        <script src="../bootstrap/jquery.min.js"></script>
+        <script src="../bootstrap/bootstrap.bundle.min.js"></script>
+        <link rel="stylesheet" href="style.css" />
+        <title>Document</title>
+    </head>
+    <body>
+        <!-- header -->
+        <header></header>
+        <!-- header -->
+        <!-- - -->
+        <!-- body -->
+        <div class="container">
+            <!-- - -->
+            <div id="a1915564">
+                <div class="user-account">
+                    <div class="avatar"></div>
+                    <div class="username-title">tranminhtoan149</div>
+                    <div class="title">
+                        <h1>Hồ sơ của tôi</h1>
+                        <p>Quản lý thông tin hồ sơ để bảo mật tài khoản</p>
+                    </div>
+                </div>
+                <!-- - -->
+                <form class="user-form" action="" method="post" onsubmit="return false;">
+                    <div class="user-info">
+                        <div class="lable">Tên đăng nhập</div>
+                        <div class="username user-data">tranminhtoan149</div>
+                    </div>
+                    <div class="user-info">
+                        <div class="lable">Tên</div>
+                        <div class="fullname user-data">
+                            <input type="text" class="form-control" value="Minh Toàn" name="username" />
+                        </div>
+                    </div>
+                    <div class="user-info">
+                        <div class="lable">Số điện thoại</div>
+                        <div class="phone-number user-data"><input type="text" class="form-control" value="0981710152" name="phone-number" /></div>
+                    </div>
+                    <div class="user-info">
+                        <div class="lable">Ngày sinh</div>
+                        <input type="date" name="birthday" class="form-control w-25 user-data" />
+                    </div>
+                    <div class="user-info">
+                        <div class="lable">Giới tính</div>
+                        <div class="gender user-data">
+                            <div class="form-check">
+                                <input type="radio" class="form-check-input form-check-input-lg" name="gender" value="male" />
+                                <label for="male">Nam</label>
+                            </div>
+                            <div class="form-check"><input type="radio" class="form-check-input" name="gender" value="female" /> <label for="female">Nữ</label></div>
+                        </div>
+                    </div>
+                    <div class="user-info">
+                        <div class="lable">Địa chỉ</div>
+                        <div class="user-data address">
+                            <input type="text" name="address" class="form-control" />
+                        </div>
+                    </div>
+                    <div class="user-info">
+                        <div class="lable">Mật khẩu</div>
+                        <div class="password user-data">
+                            <p class="text-primary" data-bs-toggle="modal" data-bs-target="#change-password">Đổi mật khẩu</p>
+                            <!-- modal - change password -->
+                            <form action="" method="POST">
+                                <div class="modal fade" id="change-password">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-body">
+                                                <label for="old-pass" class="form-label">Mật khẩu cũ</label>
+                                                <input type="password" class="form-control" class="old-pass" />
+                                                <label for="new-pass" class="form-label">Mật khẩu mới</label>
+                                                <input type="password" class="form-control" class="new-pass" />
+                                                <label for="re-new-pass" class="form-label">Nhập lại mật khẩu mới</label>
+                                                <input type="password" class="form-control" class="re-new-password" />
+                                            </div>
+                                            <div class="modal-footer">
+                                                <input type="submit" class="form-control btn-danger w-50" value="Đổi mật khẩu" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                            <!-- end of modal -->
+                        </div>
+                    </div>
+                    <div class="submit-form">
+                        <input type="submit" class="save-user-info" value="Lưu" />
+                    </div>
+                </form>
+                <!-- - -->
+            </div>
+        </div>
+        <!-- end of body -->
+        <!-- - -->
+        <!-- footer -->
+        <footer>This is footer</footer>
+        <!-- end of footer -->
+        <script></script>
+    </body>
+</html>

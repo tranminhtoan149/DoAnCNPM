@@ -1,0 +1,13 @@
+thead {
+  background-color: #2c4079;
+  color: white;
+  text-align: center;
+}
+
+tbody {
+  text-align: center;
+}
+
+.sum {
+  background-color: rgb(135, 235, 149);
+}

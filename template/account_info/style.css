@@ -1,0 +1,125 @@
+body::-webkit-scrollbar {
+    width: 0px !important;
+}
+
+/* header */
+header {
+    height: 80px;
+
+    background: linear-gradient(to bottom, #364b87, #5a70ac);
+}
+/* header */
+/*  */
+/*  */
+/* body */
+
+#a1915564 .user-account {
+    height: 150px;
+    position: relative;
+}
+#a1915564 .user-account::before {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    height: 1px;
+    width: 100%;
+    background: linear-gradient(to right, white, #364b87, white);
+}
+#a1915564 .avatar {
+    width: 100px;
+    height: 100px;
+    border: 1px solid #364b87;
+    position: absolute;
+    top: 50%;
+    left: 100px;
+    border-radius: 50%;
+    transform: translateY(-50%);
+}
+#a1915564 .username-title {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 230px;
+}
+#a1915564 .title {
+    top: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    left: 50%;
+}
+/* form*/
+#a1915564 .user-form {
+    margin-left: 250px;
+}
+#a1915564 .user-info {
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+#a1915564 .lable {
+    display: inline-block;
+    width: 200px;
+    text-align: right;
+    color: rgba(85, 85, 85, 0.8);
+    margin-right: 40px;
+}
+#a1915564 .user-data {
+    display: inline-block;
+}
+#a1915564 .input-birth-day {
+    display: flex;
+}
+#a1915564 .form-select {
+    width: 150px;
+    margin-right: 20px;
+}
+#a1915564 .form-check {
+    display: inline-block;
+    margin-right: 20px;
+}
+#a1915564 .address {
+    width: 500px;
+}
+#a1915564 .password {
+    cursor: pointer;
+}
+
+/* modal  */
+#a1915564 .modal {
+    cursor: default;
+}
+
+#a1915564 .modal-content {
+    margin-top: 150px;
+}
+.modal-footer {
+    justify-content: center;
+}
+#a1915564 .submit-form {
+    position: relative;
+}
+#a1915564 .submit-form input {
+    width: 100px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#a1915564 .modal-body label:not(:first-child) {
+    margin-top: 10px;
+}
+#a1915564 .save-user-info {
+    color: white;
+    background-color: #364b87;
+    border: 2px solid #364b87;
+    font-weight: 600;
+    width: 70px;
+    height: 38px;
+    border-radius: 3px;
+}
+/* end modal */
+/* end body */
+/* footer */
+footer {
+    margin-top: 100px;
+    height: 100px;
+    border: 1px solid;
+}

@@ -1,0 +1,183 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Manager Page</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./vendor/css/bootstrap.min.css">
+
+    <link href="./css/manager.css" rel="stylesheet">
+    <link href="./css/product.css" rel="stylesheet">
+    <link href="./css/transaction.css" rel="stylesheet">
+
+    <script src="./vendor/js/jquery-3.6.0.min.js "></script>
+    <script src="./vendor/js/popper.min.js "></script>
+    <script src="./vendor/js/bootstrap.bundle.min.js "></script>
+    <script src="./vendor/js/bootstrap.min.js "></script>
+    <script src="./vendor/js/fontawesome.min.js "></script>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-sm align-center justify-content-between border-bottom border-2">
+        <div class="logo">
+            <i class="fas fa-crosshairs"></i>
+            <span class="buy_me_first">Buy Me First</span>
+        </div>
+        <div class="dropbtn-account">
+            <i class="far fa-user-circle"></i>
+            <i class="fa fa-caret-down"></i>
+            <div id="dropdown-account" class="dropdown-account">
+                <div id="logout-button">Đăng Xuất</div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="sidebar">
+        <div class="sidebar_title">Task</div>
+        <button class="tablinks" onclick="openCity(event, 'Product')" id="defaultOpen"><i class="fas fa-warehouse"></i> Sản phẩm </button>
+        <button class="tablinks" onclick="openCity(event, 'Transaction')" > <i class="fas fa-chart-bar"></i> Thống kê </button>
+        <button class="tablinks" onclick="openCity(event, 'Addnew')"><i class="fas fa-plus-square"></i> <span style="display: inline-block">Thêm</span> </button>
+    </div>
+      
+    <div class="content">
+        <div id="Product" class="tabcontent menu__product">
+            <div class="task_label">
+                Product
+            </div>
+            
+            <div class="type_label">
+                <i id="type_name">Laptop</i>
+                <i onclick="myFunction('dropdown-type')" class="fas fa-list dropbtn-type"></i>
+                <div id="dropdown-type" class="dropdown-type">
+                    <div onclick="show_product('laptop')">Laptop</div>
+                    <div onclick="show_product('smartphone')">Điện Thoại</div>
+                    <div onclick="show_product('watch')">Đồng Hồ</div>
+                    <div onclick="show_product('accessory')">Phụ Kiện</div>
+                </div>
+            </div>
+
+            <div id="product__list" class="justify-content-around d-flex row">
+                
+            </div>
+        </div>
+          
+        <div id="Transaction" class="tabcontent menu__product">
+            <div class="task_label">Transaction</div>
+            <table class="table table-hover table-sm table-bordered center-table">
+                <thead class="">
+                    <tr class="container">
+                        <td style="width: 10%;">STT</td>
+                        <td style="width: 50%">Tên sản phẩm</td>
+                        <td style="width: 20%">Đã bán</td>
+                        <td style="width: 20%">Doanh thu</td>
+                    </tr>
+                </thead>
+                <tbody id="transaction__list">
+                </tbody>
+            </table>
+            <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#reset">Xóa thống kê</button>
+            
+                  <div class="modal fade" id="reset">
+                      <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                          <div class="modal-header d-flex justify-content-center">
+                            XÓA
+                          </div>
+
+                          <!-- Modal body -->
+                          <div class="modal-body">
+                            Việc này sẽ xóa hết dữ liệu thống kê hiện có
+                            <br>
+                            Bạn chắc chắn chứ?
+                          </div>
+
+                          <!-- Modal footer -->
+                          <div class="modal-footer">
+                            <button type="button" onclick="window.location = './api/transaction/delete.php'" class="btn btn-success">Chắc chắn</button>
+                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Quay lại</button>
+                          </div>
+
+                        </div>
+                      </div>
+                  </div> 
+        </div>
+        
+        <div id="Addnew" class="tabcontent menu__product">
+            <div class="task_label">Add new</div>
+            <form class="d-flex flex-wrap bg-light justify-content-center was-validated" action="./api/product/insert.php" method="post" enctype="multipart/form-data">
+                <div class="border border-2" style="width: 200px; height: 200px;">
+                    <label for="fileanh">Thêm ảnh</label>
+                    <input id="fileanh" type="file" name="fileToUpload" class="container ">
+                </div>
+                <div class="mx-2 flex-grow-1">
+                  <div class="input-group mb-3">
+                      <span class="input-group-text">Tên sản phẩm:</span>
+                      <input type="text" class="form-control" placeholder="Input Name" name="product_name" id="product_name" required>
+                  </div>
+                  
+                  <div class="input-group mb-3">
+                      <span class="input-group-text">Loại:</span>
+                      <select class="form-select" id="product_type" name="product_type">
+                        <option value="laptop">Laptop</option>
+                        <option value="smartphone">Điện Thoại</option>
+                        <option value="watch">Đồng Hồ</option>
+                        <option value="accessory">Phụ Kiện</option>
+                      </select>
+                  </div>
+                  
+                  <div class="input-group mb-3">
+                      <span class="input-group-text">Màu sắc:</span>
+                      <input type="text" class="form-control" placeholder="Input Color" name="product_color" id="product_color">
+                      
+                  </div>
+                  
+                  <div class="input-group mb-3">
+                      <span class="input-group-text">Đơn giá:</span>
+                      <input type="text" class="form-control" placeholder="Input Price" name="product_price" id="product_price" required>
+                      
+                  </div>
+                  
+                  <div class="input-group mb-3">
+                      <span class="input-group-text">Số lượng:</span>
+                      <input type="text" class="form-control" placeholder="Input Quantity" name="product_quantity" id="product_quantity" required>
+                      
+                  </div>
+                  
+                  <div class="my-3">
+                    <span class="input-group-text">Mô tả:</span>
+                      <textarea class="form-control" rows="5" name="product_description" id="product_description"></textarea>
+                  </div>
+                    
+                    <button type="button" class="btn-add" data-bs-toggle="modal" data-bs-target="#Them_san_pham">THÊM</button>
+                </div>
+                  
+                <div class="modal fade" id="Them_san_pham">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header d-flex justify-content-center">
+                                Thêm sản phẩm
+                            </div>
+                            <div class="modal-body">
+                                Chắc chắn:
+                            </div>
+                            <div class="modal-footer">
+                                <input type="submit" class="btn btn-success" data-bs-dismiss="modal" value="Chắc chắn">
+                                <div type="" class="btn btn-danger" data-bs-dismiss="modal">Quay lại</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    </div>
+    
+
+
+    <script src="./js/manager.js"></script>
+    <script src="./js/product.js"></script>
+    <script src="./js/transaction.js"></script>
+</body>
+</html>

@@ -1,0 +1,99 @@
+
+.offcanvas {
+    border-radius: 1rem !important;
+}
+
+.offcanvas-body {
+    overflow-y: scroll;
+    border-radius: 0.5rem !important;
+}
+
+.custom-img {
+    width: 60%;
+
+}
+
+
+.cart-btn button{
+    border: none;
+    background-color: inherit;
+}
+
+
+.info h2 {
+    color: #434E6E;
+    font-size: 1.1rem;
+    padding: 0;
+    margin: 0;
+}
+
+.mod-item-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.mod-item-container i:hover {
+    cursor: pointer;
+}
+
+.mod-item {
+    background-color: var(--main-bg-color);
+    height: 3rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 0.5rem;
+}
+
+.mod-item span {
+    color: white;
+}
+
+.btn-checkout {
+    border-radius: 0.4rem;
+    padding: 1rem 2rem;
+    background-color: var(--main-bg-color);
+    color: white;
+}
+
+.btn-checkout a {
+    text-decoration: none;
+    color: white;
+}
+
+.offcanvas-end {
+    width: 40% !important;
+}
+
+@media only screen and (max-width: 1200px) {
+
+    .offcanvas-end {
+        width: 50% !important;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+
+    .offcanvas-end {
+        width: 60% !important;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+    .offcanvas-end {
+        width: 70% !important;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+
+    .offcanvas-end {
+        width: 60% !important;
+    }
+}
+
+
+
+
+

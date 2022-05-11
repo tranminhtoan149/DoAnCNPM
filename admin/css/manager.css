@@ -1,0 +1,166 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  position: relative;
+  opacity: 1;
+}
+
+body {
+  color: rgb(54, 75, 135);
+  margin: auto;
+  max-width: 1300px;
+  background-image: url("https://img2.thuthuatphanmem.vn/uploads/2019/03/02/nen-powerpoint-mau-xanh-duong-dep_012325143.jpg");
+}
+
+.logo {
+  margin-left: 1em;
+  color: white;
+  background-color: rgb(54, 75, 135);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.fa-crosshairs,
+.fa-arrow-alt-circle-left {
+  font-size: 1.5em;
+  border-radius: 20%;
+  margin-left: 0.3em;
+  padding: 0.3rem;
+}
+
+.buy_me_first {
+  font-size: 1.5em;
+  margin-right: 0.5em;
+  color: 34495e;
+  font-weight: 700;
+}
+
+.dropbtn-account {
+  cursor: pointer;
+  font-size: 1.5rem;
+  padding: 2px 5px;
+  border-radius: 5px;
+}
+
+.dropbtn-account:hover {
+  background-color: rgb(54, 75, 135);
+  color: white;
+}
+
+.dropdown-account {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 6;
+}
+
+.dropdown-account div {
+  font-size: 1rem;
+  padding: 2px;
+  border-bottom: 1px solid black;
+  margin: 5px 0;
+  text-align: center;
+  color: black;
+  display: block;
+}
+
+.dropdown-account div:hover {
+  background-color: #688099;
+  cursor: pointer;
+}
+
+.dropbtn-account:hover .dropdown-account {
+  display: block;
+}
+
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 180px;
+  background-color: #f1f1f1;
+  position: fixed;
+  height: 100%;
+  float: left;
+  background-color: #f1f1f1;
+  height: 90%;
+  transition: 1s;
+}
+
+.sidebar_title {
+  text-align: center;
+  line-height: 40px;
+  font-size: 22px;
+  width: 90%;
+  margin: 10px auto;
+  border: 1px solid rgb(54, 75, 135);
+}
+
+.sidebar button {
+  width: 100%;
+  display: block;
+  color: black;
+  padding: 15px;
+  text-decoration: none;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.8s;
+  font-size: 17px;
+}
+
+.sidebar button.active {
+  background-color: rgb(54, 75, 135);
+  color: white;
+  font-weight: 600;
+}
+
+.sidebar button:hover:not(.active) {
+  background-color: rgb(182, 180, 180);
+}
+
+div.content {
+  margin-left: 180px;
+  padding: 1px 16px;
+  position: relative;
+  transition: 1s;
+}
+
+@media screen and (max-width: 800px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    display: flex;
+    position: static;
+  }
+
+  .sidebar_title {
+    display: none;
+  }
+
+  .sidebar button {
+    float: left;
+    text-align: center;
+    padding: 10px;
+  }
+  div.content {
+    margin-top: 60px;
+    margin-left: 0;
+  }
+}
+
+/*-----------ADD -----------------------------*/
+.btn-add {
+  padding: 5px 10px 3px;
+  border: 1px solid rgb(54, 75, 135);
+  border-radius: 5px;
+}
+
+.btn-add:hover {
+  background-color: #34495e;
+  color: white;
+}

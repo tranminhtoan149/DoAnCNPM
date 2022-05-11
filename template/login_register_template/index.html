@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="../bootstrap/bootstrap.min.css" />
+        <script src="../bootstrap/jquery.min.js"></script>
+        <script src="../bootstrap/bootstrap.bundle.min.js"></script>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Zen+Antique&display=swap" rel="stylesheet" />
+        <title>Document</title>
+    </head>
+    <body>
+        <header></header>
+        <!-- login-template -->
+        <div class="login-template">
+            <div class="login-content">
+                <div class="login-box">
+                    <div class="title-login">ACCOUNT LOGIN</div>
+                    <div class="user-account">
+                        <form action="" onsubmit="return false" class="login-form">
+                            <div class="form-group">
+                                <input type="text" class="username-input form-control input-effect" placeholder="Username" />
+                            </div>
+                            <div class="form-group mt-3">
+                                <input type="password" name="password" class="password-input form-control input-effect" placeholder="Password" />
+                            </div>
+                            <div class="form-group mt-3">
+                                <button type="submit" class="login-button form-control">Login</button>
+                            </div>
+                        </form>
+                        <div style="color: white; font-size: 15px" class="mt-4">Chưa có tài khoản?</div>
+                        <div><button class="register form-control mt-4" data-bs-toggle="offcanvas" data-bs-target="#register-offcanvas">Register</button></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="register-box">
+            <div class="offcanvas offcanvas-end" id="register-offcanvas">
+                <div class="offcanvas-header">
+                    <div class="offcanvas-title">
+                        <p style="font-size: 40px; font-weight: 600">REGISTER</p>
+                    </div>
+                </div>
+                <div class="offcanvas-body">
+                    <form action="" onsubmit="return false" class="register-form">
+                        <div class="form-group">
+                            <input type="text" class="username-input form-control input-effect" placeholder="Username" />
+                        </div>
+                        <div class="form-group mt-3">
+                            <input type="password" name="password" class="password-input form-control input-effect" placeholder="Password" />
+                        </div>
+                        <div class="form-group mt-3">
+                            <input type="text" class="fullname-input form-control input-effect" placeholder="Full name" />
+                        </div>
+                        <div class="form-group mt-3">
+                            <input type="date" class="birth-input form-control input-effect" />
+                        </div>
+                        <div class="form-group mt-3">
+                            <div class="input-effect gender">
+                                Gender:
+                                <div class="form-check"><input type="radio" name="gender" value="male" class="form-check-input ms-2 me-1" />Male</div>
+                                <div class="form-check"><input type="radio" name="gender" value="male" class="form-check-input ms-2 me-1" />Female</div>
+                            </div>
+                        </div>
+                        <button class="register form-control mt-3" data-bs-dismiss="offcanvas">Regiser</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <footer></footer>
+    </body>
+</html>
